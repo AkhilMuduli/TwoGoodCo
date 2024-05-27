@@ -107,6 +107,10 @@ a {
   display: block;
   height: 80px;
 }
+.layer2 #logo {
+  display: block;
+  height: 40px;
+}
 .layer3 {
   display: block;
   height: 18px;
