@@ -1,9 +1,11 @@
-@font-face {
+@import url(./HelveticaNowText-Regular.ttf);
+
+/* @font-face {
   font-family: "Helvetica";
   src: url("./HelveticaNowText-Regular.ttf");
   font-style: normal;
   font-weight: normal;
-}
+} */
 @font-face {
   font-family: "futura";
   src: url("./Futura-Bold.ttf");
@@ -364,7 +366,7 @@ a {
   position: relative;
 }
 .radio_child {
-  min-width: 400px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,9 +520,9 @@ a {
   }
 }
 @media screen and (max-width: 650px) {
-  .slider-item {
+  /* .slider-item {
     width: 300px;
-  }
+  } */
 
   #page1 h1 {
     font-size: 14vw;
@@ -546,7 +548,7 @@ a {
 }
 @media screen and (max-width: 450px) {
   .radio_child {
-    min-width: 300px;
+    max-width: 200px;
   }
   #page1 h1 {
     font-size: 14vw;
