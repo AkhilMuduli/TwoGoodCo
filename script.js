@@ -1,6 +1,8 @@
 function init(){
-    gsap.registerPlugin(ScrollTrigger);
+    if (window.innerWidth <= 768 || window.innerWidth <= 1200 || window.innerWidth <= 1920){
+      gsap.registerPlugin(ScrollTrigger);
 
+    
     const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true
@@ -20,6 +22,7 @@ function init(){
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
     ScrollTrigger.refresh();
+    }
 
 }
 
